@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/activity_add_fish"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context="com.example.xusenweli.notebook.DetailActivity"
-        android:orientation="vertical">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_add_fish"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.xusenweli.notebook.DetailActivity"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/textView2"
@@ -17,7 +18,7 @@
         tools:layout_editor_absoluteY="16dp" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/etTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -27,7 +28,7 @@
         tools:layout_editor_absoluteY="50dp" />
 
     <EditText
-        android:id="@+id/et"
+        android:id="@+id/etNotes"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-condensed"
@@ -39,5 +40,12 @@
         android:scrollbars="vertical"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="328dp" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
 
 </LinearLayout>
